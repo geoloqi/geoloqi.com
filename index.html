@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 7 ]><html class="no-js ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    
+      <title>Geoloqi - Geoloqi - A powerful platform for mobile location, messaging, and analytics</title>
+    <meta name='description' content='Geoloqi is a platform for building location aware applications with geotriggers and realtime location capabilities.'>
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+      <script type="text/javascript" src="/js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    
+    <script src='/assets/modernizr.604217.js'></script>
+    
+    
+
+    <link rel='stylesheet' href='/assets/main.119320.css' />
+
+    <link href='https://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/dojo/dijit/themes/claro/claro.css' rel='stylesheet' type='text/css' /><link href='https://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/esri/css/esri.css' rel='stylesheet' type='text/css' /><link rel='stylesheet' href='/assets/home_page.440337.css' />
+
+    
+
+    
+    
+      <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25750303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc">
+
+  </head>
+
+	<body class="claro with-news  home logged-out">
+		<div id="wrapper">
+			<div id="page" class="with-news">
+      
+        <div id="news-banner" class="hide-tablet-portrait">
+  <p>Esri's Geotrigger Service is replacing Geoloqi <a href="http://developers.arcgis.com/features/geotrigger-service">Learn More</a> | <a href="/faq">FAQ</a></p>
+</div>
+
+
+        <header id="header">
+  		
+<a href="/" id="logo">Geoloqi</a>
+<nav id="site-selector">
+  <ul>
+    <li class="dropdown">
+      <a href="/">Geoloqi</a>
+      <div class="dropdown-menu">
+        <ul>
+          <li>
+            <a href="http://geoloqi.com">
+              <h6>Geoloqi</h6>
+              <small>Learn more about Geoloqi</small>
+            </a>
+          </li>
+          <li>
+            <a href="http://developers.geoloqi.com">
+              <h6>Developers</h6>
+              <small>Build location-aware applications with Geoloqi</small>
+            </a>
+          </li>
+          <li>
+            <a href="http://geoloqi.com/apps">
+              <h6>Apps</h6>
+              <small>See what we have built with our native SDKs</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<nav id="main-nav">
+	<ul>
+	  <li class=""><a href="/press">Press</a></li>
+	  <li class=""><a href="/blog/">News</a></li>
+	  <li class=""><a href="https://developers.geoloqi.com/pricing">Pricing</a></li>
+	  <li><a href="https://developers.geoloqi.com/">Developers</a></li>
+	</ul>
+</nav>
+
+<nav class="secondary">
+  <ul class="nav secondary-nav" id="user-dropdown-menu" data-loggedin="false">
+      <li><a href="/session/new">Log In</a></li>
+  </ul>
+</nav>
+
+
+</header>
+
+
+
+				<div id="leading-wrapper" class="">
+  
+  <div class="mask"></div>
+
+  <div class="leading">
+    <div class="drop-in">
+      <div class="next-steps">
+        <h1>Geoloqi makes it easy to add location-awareness to any app.</h1>
+        <a href="http://developers.arcgis.com/features/geotrigger-service" id="no-start-demo" class="btn x-large green">Get A Demo Account</a>
+        <a href="#learn-more" class="btn x-large blue">Learn More</a>
+        <a href="#" class="btn transparent">Pricing</a><br><br>
+        <!--<a href="" id="replay-button" class="btn small light">Replay</a>-->
+      </div>
+    </div>
+    <div class="title">
+
+      <h1>Welcome to the Future of Location</h1>
+      <a href="#" id="start-demo" class="btn x-large icon-play primary">Get Started</a>
+      
+    </div>
+    <div class="showcase">
+      <div class="phone android-left"></div>
+      <div class="phone iphone-center"></div>
+      <div class="phone android-right"></div>
+    </div>
+  </div>
+
+  <div id="map"></div>
+</div>
+
+<div id="sub-features-wrapper">
+  <div id="learn-more"></div>
+  <div id="geocoding">
+    <h2>Geotrigger Service Now Available</h2>
+    <p>Geoloqi joined Esri in 2012 and the Geotrigger Service has been relaunched on <a href="http://developers.arcgis.com/features/geotrigger-service">http://developers.arcgis.com/features/geotrigger-service</a></p>
+    <p><a href="https://developers.arcgis.com/geotrigger-service/">Documentation</a> | <a href="https://developers.arcgis.com/geotrigger-service/guide/">Overview</a> | <a href="http://developers.arcgis.com/credits/">Geotrigger Service Pricing</a></p>
+  </div>
+  <div id="sub-features" class="container">
+    <h2 class="section-header">Use Esri's Geotrigger Service To Enable&hellip;</h2>
+    <div class="use-cases">
+
+      <div class="use-case retail">
+        <h4>Retail and Loyalty</h4>
+        <p>Engage loyal customers with personalized content and deals the moment they enter your store.</p>
+        <div class="push-notification">
+          <img src="/img/icons-retail.png" alt="">
+          <div>
+            <h4 class="compress">Big Red Box</h4>
+            <p>Sixth visit to Big Red Box,<br> get 10% off your purchase with the code 'YOUAREAWESOME!'.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="use-case real-estate">
+        <h4>Real Estate</h4>
+        <p>Send messages to prospective home buyers when their search criteria matches a home nearby.</p>
+        <div class="push-notification">
+          <img src="/img/icons-real-estate.png" alt="">
+          <div>
+            <h4 class="compress">Home Findr</h4>
+            <p>A 3, bed 2 bath house matching<br> your criteria is nearby. http://homesnearme.com/asi90</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="use-case energy">
+        <h4>Energy Management</h4>
+        <p>Use  your location to  automatically manage power consumption in your home or office.</p>
+        <div class="push-notification">
+          <img src="/img/icons-energy.png" alt="">
+          <div>
+            <h4 class="compress">Energy Management</h4>
+            <p>You forgot to turn the lights off at<br> work again! Good thing we did it for you!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="use-cases">
+      
+      <div class="use-case tourisum">
+        <h4>Tourism</h4>
+        <p>Bring public attractions to life by informing tourists of interesting locations as they explore your city.</p>      
+        <div class="push-notification">
+          <img src="/img/icons-tourisum.png" alt="">
+          <div>
+            <h4 class="compress">Tourism</h4>
+            <p>The Shanghai Tunnels tour <br>begins at 2:30, would you like to join? http://pdxtours.com/8sjam</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="use-case goverment">
+        <h4>Public Alerts</h4>
+        <p>Notify citizens about events such as road closures or civic emergencies based on past locations.</p>
+        <div class="push-notification">
+          <img src="/img/icons-gov.png" alt="">
+          <div>
+            <h4 class="compress">Public Alerts</h4>
+            <p>The Hawthorne Bridge will be<br> closed Saturday from 9am to Noon. http://pdx.gov/hao9</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="use-case deals">
+        <h4>Personalized Offers</h4>
+        <p>Send customized, individual offers to potential customers as they pass by your establishment.</p>
+        <div class="push-notification">
+          <img src="/img/icons-deals.png" alt="">
+          <div>
+            <h4 class="compress">Offers</h4>
+            <p>Need a break? There's a new<br> massage studio 3 blocks away.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <h3 class="use-cases-footer">or anything else you can imagine.</h3>
+
+  <section class="faq-wrapper">
+    <h2 class="section-header faq-header">Frequently Asked Questions</h2>
+    <div class="container">
+      <div class="clear faq-group">
+        <div class="faq">
+          <div class="box">
+            <h4>What is Esri's Geotrigger Service?</h4>
+            <p>After Geoloqi's aquisition by Esri, the Geoloqi team has been working on the next version of Geoloqi. The Esri Geotrigger Service is the result of this work. <a href="https://developers.arcgis.com/en/features/geotrigger-service/">Learn more!</a></p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="box">
+            <h4>Why should I use Esri's Geotrigger Service instead?</h4>
+            <p>The Geotrigger Service contains the most up-to-date work on location services. In addition to better overall performance, the Geotrigger Service is also cheaper! <a href="https://developers.arcgis.com/credits/">Pricing</a></p>
+          </div>
+        </div>
+        <div class="faq last">
+          <div class="box">
+            <h4>Is Geoloqi being shut down?</h4>
+            <p>Current Geoloqi customers do not have to worry &mdash; Geoloqi will continue to remain active until August 2015. We encourage current Geoloqi customers to migrate over to the Geotrigger Service, and we will be releasing tools to help with the migration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <div class="faq">
+          <div class="box">
+            <h4>Can I still sign up for Geoloqi?</h4>
+            <p>Geoloqi isn't accepting new customers at this time. We encourage you to look at Esri's Geotrigger Service!</p>
+          </div>
+        </div>
+        
+        <div class="faq">
+          <div class="box">
+            <h4>How easy is it to migrate?</h4>
+            <p>A <a href="https://developers.arcgis.com/geotrigger-service/guide/migration-guide/">migration guide</a> has been published, and we will be releasing tools to help make the migration easier. If you are a large customer that needs assistance migrating please contact: <a href="mailto:geotrigger@esri.com">geotrigger@esri.com</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq last">
+          <div class="box">
+            <h4>Can you develop my app for me?</h4>
+            <p>No, but if you are a large enterprise serving over 100,000 users, we can discuss OEM options. Contact us for more information.</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear center-text">
+        <a href="/faq" class="btn large light icon-help">More Questions</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="get-demo-account topo-background center-text">
+    <a href="#" class="btn large transparent">Pricing Plans</a>
+    <a href="https://developers.arcgis.com/features/geotrigger-service" id="no-start-demo" class="btn x-large green">Get A Demo Account</a>
+    <a href="http://developers.geoloqi.com" id="no-start-demo" class="btn large transparent">Developer Docs</a>
+  </div>
+  
+<div id="press-wrapper">
+  <div id="press" class="container">
+    <section class="press">
+      <h2>Press</h2>
+      
+      <div class="left">
+        <a href="http://www.entrepreneur.com/article/223616">
+          <img src="/img/logos-entrepreneur.com.png" alt="Entrepreneur Magizine Logo">
+          <h6>Geoloqi Makes it Easier to Make Apps Smarter</h6>
+        </a>
+        <a href="http://www.wired.com/underwire/2012/03/geoloqi-smartphone-battery-life/">
+          <img src="/img/logos-wired.com.png" alt="Wired Logo">
+          <h6>Smartphone Battery Dead Again? Geoloqi Locates a Possible Solution</h6>
+        </a>
+        <a href="http://venturebeat.com/2012/05/22/geoloqi-appcelerator/">
+          <img src="/img/logos-venturebeat.com.png" alt="Venture Beat Logo">
+          <h6>Better location tools for more apps: Geoloqi is now on Appcelerator Titanium</h6>
+        </a>
+        <a href="http://www.digitaltrends.com/mobile/geoloqi-partners-with-appcelerator/">
+          <img src="/img/logos-digitaltrends.com.png" alt="Digital Trends Logo">
+          <h6>Geoloqi and Appcelerator join forces for location app development - minus the battery suck</h6>
+        </a>
+      </div>
+
+      <div class="right">
+        <a href="http://techland.time.com/2012/03/12/south-by-southwest-amber-case-geo-fencing-geoloqi/">
+          <img src="/img/logos-time.com.png" alt="Time Logo">
+          <h6>SXSW: Why Geo-Fencing Might Change Your Life (and Make You Believe in Location Sharing)</h6>
+        </a>
+        <a href="http://techcrunch.com/2012/02/23/geolocations-potential-heats-up-with-geoloqis-battery-saving-tech/">
+          <img src="/img/logos-techcrunch.com.png" alt="Tech Crunch Logo">
+          <h6>Geolocation's Potential Heats Up With Geoloqi's Battery-Saving Tech</h6>
+        </a>
+        <a href="http://www.readwriteweb.com/mobile/2012/02/the-holy-grail-of-rich-locatio.php">
+          <img src="/img/logos-readwriteweb.com.png" alt="Read Write Web Logo">
+          <h6>The Holy Grail of Rich Location Data Made Easy With new SDKs from Geoloqi</h6>
+        </a>
+        <a href="http://pandodaily.com/2012/03/11/geoloqi-solver-of-the-great-location-problem-partners-up/">
+          <img src="/img/logos-pandodaily.com.png" alt="Pando Daily logos-pandodaily">
+          <h6>Geoloqi, Solver of the Great Location Problem, Partners Up</h6>
+        </a>
+      </div>
+      <hr class="clear">
+      <nav>
+        <a href="/press">Press Mentions</a> | <a href="/press-kit">Press Kit</a> | <a href="/about">About Geoloqi</a>
+      </nav>
+    </section>
+    <section class="blog">
+      <h2>Blog</h2>
+        <article>
+          <time datetime="2012-10-15T18:07:32+00:00"><small>Monday October 15th</small></time>
+          <h4 class="compress-top"><a href="https://geoloqi.com/blog/2012/10/geoloqi-is-now-part-of-esri/">Geoloqi is now part of Esri!</a></h4>
+          <p>Geoloqi’s team and technology are joining Esri, the world’s leader in mapping technology and geographic systems, to bring powerful next-gen location and mapping technology to m… <a href="https://geoloqi.com/blog/2012/10/geoloqi-is-now-part-of-esri/">Read more</a></p>
+        </article>
+        <hr>
+        <article>
+          <time datetime="2012-10-13T14:30:40+00:00"><small>Saturday October 13th</small></time>
+          <h4 class="compress-top"><a href="https://geoloqi.com/blog/2012/10/geoloqi-event-calendar-2012-2013/">Geoloqi Event Calendar 2012-2013</a></h4>
+          <p>Upcoming Conferences on Location, Mobile and Business 2012 and 2013 are full of interesting conferences to go to and more people to meet. We’ll be traveling even more next year… <a href="https://geoloqi.com/blog/2012/10/geoloqi-event-calendar-2012-2013/">Read more</a></p>
+        </article>
+        <hr>
+        <article>
+          <time datetime="2012-10-11T00:41:54+00:00"><small>Thursday October 11th</small></time>
+          <h4 class="compress-top"><a href="https://geoloqi.com/blog/2012/10/join-us-at-the-wherecamppdx-kickoff-party-at-geoloqi-hq-friday-oct-12-2012-from-6-9pm/">WhereCampPDX Kickoff Party at Geoloqi! Friday, 10/12 – 6-9pm!</a></h4>
+          <p>WhereCamp Preparty! Join us for the Fifth Annual WhereCampPDX Kickoff Party this Friday at Geoloqi HQ!. Beers and banter will be provided! With the growing numbers of geonerds … <a href="https://geoloqi.com/blog/2012/10/join-us-at-the-wherecamppdx-kickoff-party-at-geoloqi-hq-friday-oct-12-2012-from-6-9pm/">Read more</a></p>
+        </article>
+        <hr>
+      <nav>
+        <a href="/blog">Geoloqi Blog</a> | <a href="/blog/feed" class="icon-rss">RSS Feed</a>
+      </nav>
+    </section>
+  </div>
+</div>
+
+  <div class="topo-background">
+    <div class="container">
+      <div class="left">
+        <h2>Partners and OEMs</h2>
+        <p>Ready to partner with us or license our platform? <a href="https://developers.geoloqi.com/" class="btn primary">Contact Us</a></p>
+      </div>
+      <div class="partner-logos">
+        <img src="/img/partners-locaid.png" class="locaid" alt="LocAid">
+        <img src="/img/partners-factual.png" class="factual" alt="Factual">
+        <img src="/img/partners-appcelerator.png" class="appcelerator" alt="Appcelerator">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+			</div>
+      <div id="push"></div>
+		</div>
+
+		<footer id="footer">
+	<div id="site-footer">
+		<div class="inner">
+			<nav>
+				<h6 class="compress-bottom">Geoloqi</h6>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="https://developers.geoloqi.com">Developers</a></li>
+					<li><a href="/apps">Apps</a></li>
+					<li><a href="#">Pricing</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<h6 class="compress-bottom">SDKs</h6>
+				<ul>
+					<li><a href="https://developers.geoloqi.com/ios">iOS</a></li>
+					<li><a href="https://developers.geoloqi.com/android">Android</a></li>
+					<li><a href="https://developers.geoloqi.com/titanium">Titanium</a></li>
+					<li><a href="https://developers.geoloqi.com/client-libraries">API Client Libraries</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<h6 class="compress-bottom">Resources</h6>
+				<ul>
+					<li><a href="https://developers.geoloqi.com/sample-code">Sample Code</a></li>
+					<li><a href="https://developers.geoloqi.com/api/console">API Console</a></li>
+					<li><a href="/press-kit">Press Kit</a></li>
+					<li><a href="/faq">FAQ</a></li>
+				</ul>
+			</nav>
+			<section class="apps">
+				<div class="box">
+					<nav class="ios">
+						<h6 class="compress icon-apple"> iPhone Apps</h6>
+						<ul>
+							<li><a href="/app-store/geonotes/iphone">Geonotes</a></li>
+							<!--
+								<li><a href="">Geotracks</a></li>
+							-->
+							<li><a href="/app-store/dinodeals/iphone">DinoDeals</a></li>
+							<li><a href="/app-store/everydaycity/iphone">Everyday City</a></li>
+						</ul>
+					</nav>
+					<nav class="android">
+						<h6 class="compress icon-android"> Android Apps</h6>
+						<ul>
+							<li><a href="/app-store/geonotes/android">Geonotes</a></li>
+							<li><a href="/app-store/geotracks/android">Geotracks</a></li>
+							<li><a href="/app-store/dinodeals/android">DinoDeals</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="common-footer">
+		<div class="inner">
+			<a href="http://esri.com" id="logo-footer">Esri</a>
+			<div id="social-links">
+				<a href="https://twitter.com/geoloqi" class="icon-twitter"></a>
+				<a href="https://www.facebook.com/geoloqi" class="icon-facebook"></a>
+				<a href="https://github.com/geoloqi" class="icon-github"></a>
+			</div>
+			<section id="footer-menu">
+				<nav>
+					<ul>
+						<li><a href="/about">About</a></li>
+						<li><a href="https://developers.geoloqi.com">Developers</a></li>
+						<li><a href="/press">Press</a></li>
+						<li><a href="https://developers.geoloqi.com/partners-and-oems">Partners &amp; OEMs</a></li>
+						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="https://status.geoloqi.com/">API Status</a></li>
+						<li><a href="/privacy">Privacy</a></li>
+						<li><a href="https://developers.geoloqi.com/contact">Contact Us</a></li>
+					</ul>
+				</nav>
+				<small>&copy; Copyright 2010-2012 <a href="http://esri.com">Environmental Systems Research Institute, Inc.</a> and contributors.</small>
+			</section>
+			
+		</div>
+	</div>
+</footer>
+
+    <script src="https://api.geoloqi.com/js/geoloqi.min.js"></script>
+    <script>
+      var dojoConfig = {
+        async: true,
+        packages: [{
+          name: "loqi",
+          location: "/js/loqi"
+        },{
+          name: "arcgis",
+          location: "/js/arcgis"
+        }]
+      };
+    </script>
+
+    
+    
+    <!--[if (gt IE 8)|!(IE)]><!-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+    <!--<![endif]-->
+
+    <script src="/js/libs/underscore-min.js"></script>
+    <script src='/assets/main.823778.js'></script>
+
+    <script src='https://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2'></script><script src='/assets/home_page.823778.js'></script>
+	</body>
+</html>
