@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 7 ]><html class="no-js ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    
+      <title>a - Geoloqi</title>
+    
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+      <script type="text/javascript" src="/js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    
+    <script src='/assets/modernizr.604217.js'></script>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel='stylesheet' href='/assets/main.443910.css' />
+
+    <link href='https://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/dojo/dijit/themes/claro/claro.css' rel='stylesheet' type='text/css' /><link href='https://serverapi.arcgisonline.com/jsapi/arcgis/3.2/js/esri/css/esri.css' rel='stylesheet' type='text/css' /><link rel='stylesheet' href='/assets/trip_view_css.440337.css' />
+
+    
+
+    <script>var Geoloqi = {last: null, to_user_id: 'EPs', owner: 'a', auth: 'a', type: 'user'};</script>
+    
+      <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25750303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="pingback" href="http://pingback.me/geoloqi/xmlrpc">
+
+  </head>
+
+	<body class="claro with-news   a logged-out">
+		<div id="wrapper">
+			<div id="page" class="with-news">
+      
+        <div id="news-banner" class="hide-tablet-portrait">
+  <p>Esri's Geotrigger Service is replacing Geoloqi <a href="http://developers.arcgis.com/features/geotrigger-service">Learn More</a> | <a href="/faq">FAQ</a></p>
+</div>
+
+
+        <header id="header">
+  		
+<a href="/" id="logo">Geoloqi</a>
+<nav id="site-selector">
+  <ul>
+    <li class="dropdown">
+      <a href="/">Geoloqi</a>
+      <div class="dropdown-menu">
+        <ul>
+          <li>
+            <a href="http://geoloqi.com">
+              <h6>Geoloqi</h6>
+              <small>Learn more about Geoloqi</small>
+            </a>
+          </li>
+          <li>
+            <a href="http://developers.geoloqi.com">
+              <h6>Developers</h6>
+              <small>Build location-aware applications with Geoloqi</small>
+            </a>
+          </li>
+          <li>
+            <a href="http://geoloqi.com/apps">
+              <h6>Apps</h6>
+              <small>See what we have built with our native SDKs</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+<nav id="main-nav">
+	<ul>
+	  <li class=""><a href="/press">Press</a></li>
+	  <li class=""><a href="/blog/">News</a></li>
+	  <li class=""><a href="https://developers.geoloqi.com/pricing">Pricing</a></li>
+	  <li><a href="https://developers.geoloqi.com/">Developers</a></li>
+	</ul>
+</nav>
+
+<nav class="secondary">
+  <ul class="nav secondary-nav" id="user-dropdown-menu" data-loggedin="false">
+      <li><a href="/session/new">Log In</a></li>
+  </ul>
+</nav>
+
+
+</header>
+
+
+          <div class="flash-container container">
+            
+          </div>
+
+				
+<div id="trip-wrapper">
+	<section id="trip-sidebar">
+		
+			<div id="trip-metadata" class="box">
+				<div class="content clearfix">
+						<img src="https://s3.amazonaws.com/geoloqi/blank-profile-image-orange.png" class="left profile-image" width="36" height="36">
+
+					<div id="owner">
+							<h1 class="compress">a</h1>
+
+							<p>
+								
+								
+							</p>
+					</div>
+				</div>
+				
+
+			</div>
+
+			<a id="leave-geonote" class="fill icon-geonote btn primary">Leave  a Geonote</a>
+
+	</section>
+
+	<div id="trip-map" class="map">
+		<div id="mobile-load"></div>
+	  <div id="map"></div>
+			<div class="flash notice" style="opacity: 1; top: 45px; ">
+		    <a href="" class="close icon-close"></a>
+				<p>It looks like a doesn't have the Geoloqi tracker running!</p>
+			</div>
+	</div>
+</div>
+
+<script type="text/html" id="expired">
+	<div class="disabled-map">
+		<section>
+			<div id="expired-icon"></div>
+			<h3 class="compress">Trip Ended</h3>
+			<p>You can no longer see this users location.</p>
+		</section>
+	</div>
+	<div id="app-stores" class="center">
+		<a href="http://itunes.apple.com/us/app/geoloqi/id415603875?mt=8" id="app-store" class="left">Available on the App Store</a>
+		<a href="https://market.android.com/details?id=com.geoloqi.android1" id="android-market" class="right">Available on the Android Market</a>
+	</div>
+
+</div>
+</script>
+
+<script type="text/html" id="error">
+	<div class="disabled-map">
+		<section>
+			<div id="error-icon"></div>
+				<h3 class="compress">Oh No!</h3>
+			<p>There was an error, please try reloading the page.</p>
+		</section>
+	</div>
+</script>
+
+<script id="publicGeonote" type="text/html">  
+  <form id="geonote-form" action="#" class="stacked">
+    <label>
+      <span>Message</span>
+      <div class="input">
+        <textarea name="geonote[text]" class="height3"></textarea>
+      </div>
+    </label>
+    <label>
+      <span>Your Name</span>
+      <div class="input">
+        <input type="text" name="geonote[from_name]"></input>
+      </div>
+    </label>
+    <input name="geonote[user_id]" type="hidden" value="EPs"/>
+    <input name="geonote[radius]" type="hidden" value=""/>
+    <input name="geonote[latitude]" type="hidden" value=""/>
+    <input name="geonote[longitude]" type="hidden" value=""/>
+
+    <div class="actions">
+      <input type="submit" class="btn primary small" value="Create Geonote">
+    </div>
+  </form>
+</script>
+			</div>
+      <div id="push"></div>
+		</div>
+
+		<footer id="footer">
+	<div id="site-footer">
+		<div class="inner">
+			<nav>
+				<h6 class="compress-bottom">Geoloqi</h6>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="https://developers.geoloqi.com">Developers</a></li>
+					<li><a href="/apps">Apps</a></li>
+					<li><a href="#">Pricing</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<h6 class="compress-bottom">SDKs</h6>
+				<ul>
+					<li><a href="https://developers.geoloqi.com/ios">iOS</a></li>
+					<li><a href="https://developers.geoloqi.com/android">Android</a></li>
+					<li><a href="https://developers.geoloqi.com/titanium">Titanium</a></li>
+					<li><a href="https://developers.geoloqi.com/client-libraries">API Client Libraries</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<h6 class="compress-bottom">Resources</h6>
+				<ul>
+					<li><a href="https://developers.geoloqi.com/sample-code">Sample Code</a></li>
+					<li><a href="https://developers.geoloqi.com/api/console">API Console</a></li>
+					<li><a href="/press-kit">Press Kit</a></li>
+					<li><a href="/faq">FAQ</a></li>
+				</ul>
+			</nav>
+			<section class="apps">
+				<div class="box">
+					<nav class="ios">
+						<h6 class="compress icon-apple"> iPhone Apps</h6>
+						<ul>
+							<li><a href="/app-store/geonotes/iphone">Geonotes</a></li>
+							<!--
+								<li><a href="">Geotracks</a></li>
+							-->
+							<li><a href="/app-store/dinodeals/iphone">DinoDeals</a></li>
+							<li><a href="/app-store/everydaycity/iphone">Everyday City</a></li>
+						</ul>
+					</nav>
+					<nav class="android">
+						<h6 class="compress icon-android"> Android Apps</h6>
+						<ul>
+							<li><a href="/app-store/geonotes/android">Geonotes</a></li>
+							<li><a href="/app-store/geotracks/android">Geotracks</a></li>
+							<li><a href="/app-store/dinodeals/android">DinoDeals</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="common-footer">
+		<div class="inner">
+			<a href="http://esri.com" id="logo-footer">Esri</a>
+			<div id="social-links">
+				<a href="https://twitter.com/geoloqi" class="icon-twitter"></a>
+				<a href="https://www.facebook.com/geoloqi" class="icon-facebook"></a>
+				<a href="https://github.com/geoloqi" class="icon-github"></a>
+			</div>
+			<section id="footer-menu">
+				<nav>
+					<ul>
+						<li><a href="/about">About</a></li>
+						<li><a href="https://developers.geoloqi.com">Developers</a></li>
+						<li><a href="/press">Press</a></li>
+						<li><a href="https://developers.geoloqi.com/partners-and-oems">Partners &amp; OEMs</a></li>
+						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="https://status.geoloqi.com/">API Status</a></li>
+						<li><a href="/privacy">Privacy</a></li>
+						<li><a href="https://developers.geoloqi.com/contact">Contact Us</a></li>
+					</ul>
+				</nav>
+				<small>&copy; Copyright 2010-2012 <a href="http://esri.com">Environmental Systems Research Institute, Inc.</a> and contributors.</small>
+			</section>
+			
+		</div>
+	</div>
+</footer>
+
+    <script src="https://api.geoloqi.com/js/geoloqi.min.js"></script>
+    <script>
+      var dojoConfig = {
+        async: true,
+        packages: [{
+          name: "loqi",
+          location: "/js/loqi"
+        },{
+          name: "arcgis",
+          location: "/js/arcgis"
+        }]
+      };
+    </script>
+
+    <script id="tripSuccess" type="text/html">
+	<div class="alert info">
+    <a href="" class="close icon-close"></a>
+    <h5 class="compress-top">Trip Started</h5>
+		<p>Share this link with your friends so they can see your location.</p>
+		<div class="copy-link-wrapper clearfix">
+  	<form action="" id="link-form" class="single">
+      <label>
+        <span class="hide">Link</span>
+        <input type="text" value="{{shortlink}}" id="copy-target">
+      </label>
+      <div class="actions">
+        <a id="copy-link" class="btn primary" >Copy Link</a>
+      </div>
+    </form>
+		</div>
+	</div>
+</script>
+
+<script id="tripError" type="text/html">
+	<div class="flash error">
+    <a href="" class="close icon-close"></a>
+		<p>There was a problem starting your trip, please try again.</p>
+	</div>
+</script>
+
+<script id="geonoteDelSuccess" type="text/html">
+  <div class="flash notice">
+    <a href="" class="close icon-close"></a>
+    <p>Your Geonote has been deleted.</p>
+  </div>
+</script>
+
+<script id="historyPoint" type="text/html">  
+  <small><strong>Latitude:</strong> {{latitude}}</small><br>
+  <small><strong>Longitude:</strong> {{longitude}}</small><br>
+  <small><strong>Accuracy:</strong> {{accuracy}} Meters</small><br>
+  <small><strong>Time:</strong> {{date}}</small><br>
+  <small><strong>Timestamp:</strong> {{date_ts}}</small>
+</script>
+
+<script id="geonoteDelError" type="text/html">
+  <div class="flash error">
+    <a href="" class="close icon-close"></a>
+    <p>There was a problem deleting your Geonote, please try again.</a></p>
+  </div>
+</script>
+
+<script id="placeUpdateError" type="text/html">
+  <div class="flash error">
+    <a href="" class="close icon-close"></a>
+    <p>There was a problem updating your place, please try again.</a></p>
+  </div>
+</script>
+
+<script id="placeUpdate" type="text/html">
+  <div class="flash success">
+    <a href="" class="close icon-close"></a>
+    <p>Place updated successfully.</a></p>
+  </div>
+</script>
+
+<script id="placeDelSuccess" type="text/html">
+  <div class="flash notice">
+    <a href="" class="close icon-close"></a>
+    <p>Your place has been deleted.</p>
+  </div>
+</script>
+
+<script id="placeDelError" type="text/html">
+  <div class="flash error">
+    <a href="" class="close icon-close"></a>
+    <p>There was a problem deleting your place, please try again.</p>
+  </div>
+</script>
+
+<script id="geonoteSuccess" type="text/html">
+	<div class="flash success">
+    <a href="" class="close icon-close"></a>
+		<p>Your Geonote has been set. Make sure you turn on Geoloqi on your phone so you can receive your note.</p>
+	</div>
+</script>
+
+<script id="geonoteError" type="text/html">
+	<div class="flash error">
+    <a href="" class="close icon-close"></a>
+		<p>There was a problem setting your Geonote, please try again.</p>
+	</div>
+</script>
+
+<script id="geonoteMessageBox" type="text/html">  
+  <form id="geonote-form" action="#" class="stacked">
+		<label class="collapse">
+      <span>Message</span>
+      <div class="input">
+				<textarea name="geonote[text]" class="height3"></textarea>
+      </div>
+    </label>
+    {{#place_id}}
+      <input name="geonote[place_id]" type="hidden" value="{{place_id}}">
+    {{/place_id}}
+		<input name="geonote[radius]" type="hidden" value="">
+    <input name="geonote[latitude]" type="hidden" value="">
+    <input name="geonote[longitude]" type="hidden" value="">
+
+    <div class="actions">
+			<input type="submit" class="btn primary small" value="Create Geonote">
+		</div>
+  </form>
+</script>
+
+<script id="userMessageSuccess" type="text/html">
+	<div class="flash success">
+    <a href="" class="close icon-close"></a>
+		<p>Your message has been sent.</p>
+	</div>
+</script>
+
+<script id="userMessageError" type="text/html">
+	<div class="flash error">
+    <a href="" class="close icon-close"></a>
+		<p>There was a problem sending your message, please try again.</p>
+	</div>
+</script>
+
+<script id="userMessageBox" type="text/html">  
+  <form id="userMessageForm" action="#" class="stacked">
+		<label class="collapse">
+      <span>Send a message to your phone</span>
+      <div class="input">
+				<textarea name="user[message_text]" class="height3"></textarea>
+        <small class="help-block">You will need the <a href="/apps">Geonotes app</a> on your phone.</small>
+      </div>
+    </label>
+
+    <div class="actions">
+			<input type="submit" class="btn primary small" value="Send Message">
+		</div>
+  </form>
+</script>
+
+<script id="newPlace" type="text/html">
+    <form id="place-form" = action="#" class="stacked">	
+
+			<label class="collapse">
+        <span>Name</span>
+        <div class="input">
+
+  				<input name="place[name]" type="text" value="{{place_name}}" class="span5" placeholder="Place Name">
+        </div>
+      </label>
+			<input name="place[latitude]" type="hidden" value="">
+			<input name="place[longitude]" type="hidden" value="">
+			<input name="place[radius]" type="hidden" value="">
+			<div class="actions">
+				<input type="submit" class="btn primary small" value="Create Place">
+      </div>
+ 		</form>
+</script>
+
+<script id="newPlaceError" type="text/html">
+	<div class="flash error">
+    <a href="" class="close icon-close"></a>
+		<p>There was a problem creating your place, please try again.</p>{{error}}{{message}}
+	</div>
+</script>
+
+<script id="newPlaceSuccess" type="text/html">
+	<div class="flash success">
+    <a href="" class="close">×</a>
+		<p>Place Created</p>
+	</div>
+</script>
+
+<script id="fieldError" type="text/html">
+	<span class='error small'>{{message}}</span>
+</script>
+
+<script id="insertGeonotePlace" type="text/html">
+   <li class="clearfix" data-delayOnce="true">
+    <h5 class="left">{{display_name}}</h5>
+    <a href="#" class="primary-action geonote-at-place right btn small light" data-id="{{place_id}}">New Geonote</a>
+  </li>
+</script>
+
+<script id="insertPlace" type="text/html">
+   <li class="clearfix" data-delayOnce="true">
+      <h5 class="left">{{display_name}}</h5>
+      <a href="#" data-id="{{place_id}}" class="primary-action show-place btn small light">Show Place</a>
+    </li>
+</script>
+
+<script id="editPlace"type="text/html">
+  <form id="placeEditForm" class="stacked">
+    <h4 class="compress">Editing "{{display_name}}"</h4>
+    <label style="margin-bottom:1em">
+      <span>New Name</span>
+      <div class="input"><input type="text" name="place[name]" value="{{display_name}}"></div>
+    </label>
+    <input name="place[place_id]" type="hidden" value="{{place_id}}">
+    <small><strong>Tip:</strong> Drag the handle to change the size of the place, drag the pin to change the location.</small>
+    <div class="actions"><input type="submit" class="small primary" value="Update Place"></div>
+  </form>
+</script>
+
+<script id="showPlace" type="text/html">
+  <h3 class="compress">{{display_name}}</h3>
+  <div class="btn-group">
+    <button type="button" onclick="Geonote.atPlace(this); return false;" class="btn geonote-at-place small light hover-green icon-plus" data-id="{{place_id}}" data-lat="{{latitude}}" data-lng="{{longitude}}" data-radius="{{radius}}">Add Geonote</button>
+    <a href="#" data-place-id="{{place_id}}" class="place-edit btn small light hover-green icon-pencil">Edit</a>
+    <a href="#" data-place-id="{{place_id}}" class="place-delete btn small light hover-red icon-delete">Delete</a>
+  </div>  
+  <h5 class="compress-top-half compress-bottom">Geonotes</h5>
+  {{#geonotes}}
+    <div id="geonotes-{{geonote_id}}" class="well clearfix push-bottom" style="padding:.5em">
+      <p style="margin-bottom:0;">{{text}}<br><small><time>{{date_created}}</time></small></p>
+      <button data-at-place ="true" data-geonote-id="{{geonote_id}}" data-place-id="{{place_id}}" class="delete-geonote-at-place x-small right light hover-red icon-delete">Delete</button>
+    </div>
+  {{/geonotes}}
+  {{^geonotes}}
+    <p style="marign: 0;">You dont have any geonotes here.</p>
+  {{/geonotes}}
+</script>
+
+<script id="showGeonote" type="text/html">  
+  <h5 class="compress">Geonote</h5>
+  <p class="well">{{text}}</p>
+  <div class="btn-group">
+    <a href="" class="btn light hover-red small icon-delete delete-geonote" data-geonote-id="{{geonote_id}}">Delete Geonote</a>
+  </div>
+</script>
+    
+    <!--[if (gt IE 8)|!(IE)]><!-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+    <!--<![endif]-->
+
+    <script src="/js/libs/underscore-min.js"></script>
+    <script src='/assets/main.823778.js'></script>
+
+    <script src='https://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.2'></script><script src='/js/libs/socket.io.min.js'></script><script src='/assets/trip_view_js.314622.js'></script><script src='/assets/public_geonotes.314622.js'></script>
+	</body>
+</html>

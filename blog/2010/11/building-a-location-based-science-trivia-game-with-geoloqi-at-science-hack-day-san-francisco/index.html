@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" class="no-js" itemscope itemtype="http://schema.org/Article">
+<head>
+  <meta charset="utf-8">
+
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!--[if IE]><![endif]-->
+
+	<title>Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco - Geoloqi Blog</title>
+
+	<link rel="shortcut icon" href="https://geoloqi.com/blog/wp-content/themes/Geoloqi/images/favicon.png">
+	<!--
+    <link rel="stylesheet" href="/blog/wp-content/themes/Geoloqi/style.css?v=1347404472" >
+	-->
+  <!--
+  <link rel="stylesheet" href="http://web-local.geoloqi.com:9393/css/blog.css">
+  -->
+  <link rel="stylesheet" href="https://geoloqi.com/css/blog.css">
+
+	    	
+	<!-- Wordpress Head Items -->
+  <link rel="pingback" href="https://geoloqi.com/blog/xmlrpc.php" />
+  
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.2.8.4 - http://yoast.com/wordpress/seo/ -->
+<link rel="canonical" href="https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Geoloqi Blog &raquo; Feed" href="https://geoloqi.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Geoloqi Blog &raquo; Comments Feed" href="https://geoloqi.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Geoloqi Blog &raquo; Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco Comments Feed" href="https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/feed/" />
+<link rel='stylesheet' id='flickr-gallery-css'  href='https://geoloqi.com/blog/wp-content/plugins/flickr-gallery/flickr-gallery.css?ver=1.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fg-jquery-ui-css'  href='https://geoloqi.com/blog/wp-content/plugins/flickr-gallery/tab-theme/jquery-ui-1.7.3.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-flightbox-css'  href='https://geoloqi.com/blog/wp-content/plugins/flickr-gallery/flightbox/jquery.flightbox.css?ver=1.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://geoloqi.com/blog/wp-content/themes/Geoloqi/js/jquery-latest.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='https://geoloqi.com/blog/wp-content/plugins/flickr-gallery/flightbox/jquery.flightbox.js?ver=1.5.2'></script>
+<script type='text/javascript' src='https://geoloqi.com/blog/wp-content/themes/Geoloqi/js/modernizr-latest.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=NNEmmHdTitZk7OloOlG8w&#038;v=1'></script>
+<script type='text/javascript' src='https://geoloqi.com/blog/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://geoloqi.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://geoloqi.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://geoloqi.com/blog/?p=429' />
+  
+    <!-- Facebook metadata -->
+    <meta property="og:title" content="Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/" />
+    <meta property="og:site_name" content="geoloqi.com" />
+    <meta property="og:image" content="http://geoloqi.com/blog/wp-content/uploads/2011/01/science-hack-day-logo.jpg" />
+  
+    
+    <!-- Google +1 metadata -->
+    <meta itemprop="name" content="Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco ">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://geoloqi.com/blog/wp-content/uploads/2011/01/science-hack-day-logo.jpg">
+  	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<script type="text/javascript">
+				var get_sizes = null;
+							</script>
+		<!-- Google Analytics Tracking by Google Analyticator 6.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-25750303-6']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+  <style type="text/css">
+    #stc_comm_send {
+      margin:0;
+      padding:0;
+    }
+  </style>
+</head>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <body class="single single-post postid-429 single-format-standard ie ie6 post-building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco"> <![endif]-->
+<!--[if IE 7 ]>    <body class="single single-post postid-429 single-format-standard ie ie7 post-building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco"> <![endif]-->
+<!--[if IE 8 ]>    <body class="single single-post postid-429 single-format-standard ie ie8 post-building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco"> <![endif]-->
+<!--[if IE 9 ]>    <body class="single single-post postid-429 single-format-standard ie ie9 post-building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body class="single single-post postid-429 single-format-standard not-ie post-building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco"> <!--<![endif]-->
+
+<div id="wrapper">
+  <div id="page">
+    <header id="header">
+      <a href="/" id="logo">Geoloqi</a>
+      <nav id="site-selector">
+        <ul>
+          <li class="dropdown">
+            <a href="/blog">Blog</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li>
+                  <a href="http://geoloqi.com">
+                    <h6>Geoloqi</h6>
+                    <small>Learn more about Geoloqi</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://developers.geoloqi.com">
+                    <h6>Developers</h6>
+                    <small>Build location-aware applicaitons with Geoloqi</small>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://geoloqi.com/apps">
+                    <h6>Apps</h6>
+                    <small>See what we have built with our native SDKs</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://geoloqi.com/blog/">Home</a></li>
+<li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1846"><a href="https://geoloqi.com/press">Press</a></li>
+<li id="menu-item-245" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-245"><a href="https://geoloqi.com/blog/category/features/">Features</a></li>
+<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="https://geoloqi.com/blog/gallery/">Gallery</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16"><a href="https://geoloqi.com/blog/category/events/">Events</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="https://geoloqi.com/blog/category/tutorials/">Tutorials</a></li>
+<li id="menu-item-417" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-417"><a href="https://geoloqi.com/blog/category/api/">API</a></li>
+</ul></nav>    </header>   
+     
+<div class="container">
+  <div id="main" class="post-429 post type-post status-publish format-standard hentry category-events tag-instamapper tag-location-based-gaming tag-science-hack-day tag-sms even" id="post-429">
+            <div class="box">
+        <div class="meta">
+          <h6>Posted</h6>
+<p>Mon Nov 22 2010, 11:11am</p>
+<p>By <a href="https://geoloqi.com/blog/author/caseorganic/">caseorganic</a></p>
+
+  <h6>Categories</h6>
+  <p><a href="https://geoloqi.com/blog/category/events/" title="View all posts in Events" rel="category tag">Events</a></p>
+
+  <h6>Tagged</h6>
+  <p><ul class="tag-list"><li><a href="https://geoloqi.com/blog/tag/instamapper/" rel="tag">instamapper</a></li><li><a href="https://geoloqi.com/blog/tag/location-based-gaming/" rel="tag">location based gaming</a></li><li><a href="https://geoloqi.com/blog/tag/science-hack-day/" rel="tag">science hack day</a></li><li><a href="https://geoloqi.com/blog/tag/sms/" rel="tag">sms</a></li></ul></p>
+
+<p></p>          <div class="clear right push-up-half">
+              <div class='simple-social-twitter'><a href='//twitter.com/share' class='twitter-share-button' data-url='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/' data-text='Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco' data-count='vertical'>Tweet</a></div>          </div>
+          <div class="clear right">
+              <div class='simple-social-plus-one'><g:plusone size='tall' href='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/'></g:plusone></div>          </div>
+          <div class="clear right">
+              <div class='simple-social-facebook'><fb:like href='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/' data-send='48'' layout='box_count' style='overflow:visible;' show_faces='false' width='true' font='lucida grande'></fb:like></div>          </div>
+        </div>
+        <header>
+          <h1 class="leading"><a href="https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/">Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco</a></h1>
+        </header>
+        <article>
+          <div class="clearfix">
+            <p><a href="http://sciencehackday.com/"><img class="alignright size-full wp-image-492" title="science-hack-day-logo" src="http://geoloqi.com/blog/wp-content/uploads/2011/01/science-hack-day-logo.jpg" alt="" width="158" height="156" /></a></p>
+<p>Last week, the Geoloqi team headed down to Palo Alto last week for <a href="http://sciencehackday.com/">Science Hack Day</a>, a 48 hour hacking event that brought together scientists and technologist, artists and futurists, for a weekend of development, gaming and overall enjoyment. Many of us slept at the event, while some stayed up hacking into the night.</p>
+<p>We arrived at Science Hack Day with the goal of making an experience that gets people to pay attention to the world around them. During gameplay, players walk around town and receive location-based questions via SMS related to education and science and their nearby location.</p>
+<p><a href="http://science.loqi.me/"><img class="aligncenter size-full wp-image-434" title="Science.Loqi.me" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/Science.Loqi_.me_.jpg" alt="Location-based science trivia game at Science Hack Day" width="842" height="587" /></a></p>
+<p>Each question was worth points, and more points are awarded for correct responses than incorrect responses. Those with the highest scores are listed on a leaderboard.</p>
+<p><a href="http://science.loqi.me/leaderboard.php"><img class="aligncenter size-full wp-image-435" title="science-hack-day-leaderboard" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/science-hack-day-leaderboard.png" alt="Science Notes Leaderboard" width="722" height="750" /></a></p>
+<p>Players used a GPS Tracker made by Instamapper to play the game.</p>
+<p><img class="aligncenter size-full wp-image-440" title="science-hack-day-science-walk-geoloqi-team" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/science-hack-day-science-walk-geoloqi-team1.jpg" alt="Science Hack Day Team Geoloqi" width="640" height="383" /></p>
+<p>Thanks to all those who helped us with development and testing! Kevin Rohling, Liam Holt, Megan Mansell, Devin Drew, Pete Forsyth, Ashish Mahabal and Jennifer Monfrans.</p>
+<p><img class="aligncenter size-full wp-image-437" title="test-game" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/test-game.jpg" alt="Test Game Lat Long Markers" width="822" height="558" /></p>
+<p>We left questions at a number of locations around the Institute for the Future, where the conference was being held.</p>
+<p><img class="alignleft size-full wp-image-438" title="question-response" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/question-response.jpg" alt="Question Response" width="325" height="377" /></p>
+<p><strong>Questions and Responses</strong></p>
+<p>Questions were sent to a player&#8217;s phone by SMS, and they were given points based on their response. Most questions dealt with the area right around the user.</p>
+<p>To respond, the player simply send a reply back to the SMS number and the database checked whether the response was correct or not and added points to the user&#8217;s id.</p>
+<p><img class="alignright size-full wp-image-439" title="application-architecture" src="http://geoloqi.com/blog/wp-content/uploads/2010/11/application-architecture.jpg" alt="Application Architecture" width="305" height="379" /></p>
+<p><strong>Application Architecture</strong></p>
+<p>We used the Tropo API to send the SMS messages to users as they walked around town.</p>
+<p>Geoloqi acted as the location-handler, determining where players were.</p>
+<p>Finally, the trivia content was stored in a database built by Kevin Rohling.</p>
+<p>Player ids and point tallies were handled there and displayed on the leaderboard.</p>
+<p><strong>Thank You!</strong></p>
+<p>Thanks again to everyone who joined in the game! It made <a href="http://sciencehackday.com/">Science Hack Day</a> a blast. Thanks to Ariel Waldman for organizing it, and Jeremy Keith for coming up with the concept in the first place.</p>
+          </div>
+          <footer class="clearfix">
+            <a href="https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/#comments" class="btn small push-right left"  title="Comment on Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco">Comment (1)</a>            <div class='simple-social-facebook'><fb:like href='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/' data-send='true'' layout='button_count' style='overflow:visible;' show_faces='false' width='90' font='lucida grande'></fb:like></div>            <div class='simple-social-twitter'><a href='//twitter.com/share' class='twitter-share-button' data-url='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/' data-text='Building a Location-Based Science Trivia Game with Geoloqi at Science Hack Day, San Francisco' data-count='horizontal'>Tweet</a></div>            <div class='simple-social-plus-one'><g:plusone size='medium' href='https://geoloqi.com/blog/2010/11/building-a-location-based-science-trivia-game-with-geoloqi-at-science-hack-day-san-francisco/'></g:plusone></div>          </footer>
+        </article>
+      </div>
+        <h2>Comments</h2>
+        
+<!-- You can start editing here. -->
+
+          
+  </div>
+  <aside id="sidebar">
+  <div class="inset-box">
+  	<section class="widget"><h3>Search</h3>
+<form id="searchform" method="get" class="clearfix" action="https://geoloqi.com/blog/"><div>
+  <label for="s">
+    <span class="visuallyhidden">Search for:</span>
+    <input type="search" name="s" id="s" placeholder="Search" value="" />
+  </label>  
+  <input type="submit" class="btn primary" value="Go" />
+  </div>
+</form></section><section class="widget"><h4 classs="widget-title">Geonotes For Android</h4>			<div class="textwidget"><a href="https://market.android.com/details?id=com.geoloqi.android1" id="android-market"><img src="https://geoloqi.com/img/android-market.png" alt="Available on the Android Market"></a></div>
+		</section><section class="widget"><h4 classs="widget-title">Geonotes for iPhone</h4>			<div class="textwidget"><a href="http://itunes.apple.com/us/app/geoloqi/id415603875?mt=8" id="app-store"><img src="https://geoloqi.com/img/app-store.png" alt="Available on the App Store"></a>
+</div>
+		</section>		<section class="widget">		<h4 classs="widget-title">Recent Posts</h4>		<ul>
+				<li><a href="https://geoloqi.com/blog/2014/03/esri-geotrigger-service-launches-what-geoloqi-customers-should-know/" title="Esri Geotrigger Service Launches &#8211; What Geoloqi Customers Should Know">Esri Geotrigger Service Launches &#8211; What Geoloqi Customers Should Know</a></li>
+				<li><a href="https://geoloqi.com/blog/2013/11/beta-launch-of-the-esri-geotrigger-service/" title="Beta Launch of the Esri Geotrigger Service!">Beta Launch of the Esri Geotrigger Service!</a></li>
+				<li><a href="https://geoloqi.com/blog/2013/08/changes-to-location-history-storage-for-geoloqi-developers/" title="Changes to Location History Storage for Geoloqi developers">Changes to Location History Storage for Geoloqi developers</a></li>
+				<li><a href="https://geoloqi.com/blog/2013/05/heres-why-were-excited-about-the-new-google-location-apis/" title="Here&#8217;s why we&#8217;re excited about the new Android Location APIs">Here&#8217;s why we&#8217;re excited about the new Android Location APIs</a></li>
+				<li><a href="https://geoloqi.com/blog/2013/05/come-to-the-esri-developer-social-at-google-io/" title="Come to the Esri Developer Social at Google I/O!">Come to the Esri Developer Social at Google I/O!</a></li>
+				</ul>
+		</section><section class="widget"><h4 classs="widget-title">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><a href='http://www.mapper.co' rel='external nofollow' class='url'>Simon</a> on <a href="https://geoloqi.com/blog/2010/08/how-do-i-get-my-instamapper-device-and-api-key/#comment-1281">How do I get my Instamapper Device and API Key?</a></li><li class="recentcomments">Jarek on <a href="https://geoloqi.com/blog/2011/11/geoloqi-now-with-gp-export/#comment-1190">Geoloqi &#8211; Now with GPX Export!</a></li><li class="recentcomments"><a href='http://searchengineland.blog.com/' rel='external nofollow' class='url'>search</a> on <a href="https://geoloqi.com/blog/2012/10/geoloqi-is-now-part-of-esri/#comment-1168">Geoloqi is now part of Esri!</a></li><li class="recentcomments"><a href='http://www.yahoo.com' rel='external nofollow' class='url'>harpal</a> on <a href="https://geoloqi.com/blog/2010/08/how-do-i-get-my-instamapper-device-and-api-key/#comment-1149">How do I get my Instamapper Device and API Key?</a></li><li class="recentcomments"><a href='http://caseorganic.com' rel='external nofollow' class='url'>caseorganic</a> on <a href="https://geoloqi.com/blog/2011/01/how-to-use-geoloqi-with-an-android-phone/#comment-1112">How to Use Geoloqi with an Android Phone</a></li></ul></section><section class="widget"><h4 classs="widget-title">Meta</h4>			<ul>
+						<li><a rel="nofollow" href="https://geoloqi.com/blog/wp-login.php">Log in</a></li>
+			<li><a href="https://geoloqi.com/blog/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://geoloqi.com/blog/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</section>  </div>
+</aside></div>
+
+</div>
+<div id="push"></div>
+</div>
+<footer id="footer">
+  <div id="site-footer">
+    <div class="inner">
+      <nav>
+        <h6 class="compress-bottom">Geoloqi</h6>
+        <ul>
+          <li><a href="https://geoloqi.com/">Home</a></li>
+          <li><a href="https://developers.geoloqi.com">Developers</a></li>
+          <li><a href="https://geoloqi.com/apps">Apps</a></li>
+          <li><a href="https://geoloqi.com/pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h6 class="compress-bottom">SDKs</h6>
+        <ul>
+          <li><a href="https://developers.geoloqi.com/ios">iOS</a></li>
+          <li><a href="https://developers.geoloqi.com/android">Android</a></li>
+          <li><a href="https://developers.geoloqi.com/titanium">Titanium</a></li>
+          <li><a href="https://developers.geoloqi.com/client-libraries">API Client Libraries</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h6 class="compress-bottom">Resources</h6>
+        <ul>
+          <li><a href="https://developers.geoloqi.com/sample-code">Sample Code</a></li>
+          <li><a href="https://developers.geoloqi.com/api/console">API Console</a></li>
+          <li><a href="https://geoloqi.com/press-kit">Press Kit</a></li>
+          <li><a href="https://geoloqi.com/faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <section class="apps">
+        <div class="box">
+          <nav class="ios">
+            <h6 class="compress icon-apple"> iPhone Apps</h6>
+            <ul>
+              <li><a href="https://geoloqi.com/app-store/geonotes/iphone">Geonotes</a></li>
+              <!--
+
+                <li><a href="">Geotracks</a></li>
+              -->
+              <li><a href="https://geoloqi.com/app-store/dinodeals/iphone">DinoDeals</a></li>
+              <li><a href="https://geoloqi.com/app-store/everydaycity/iphone">Everyday City</a></li>
+            </ul>
+          </nav>
+          <nav class="android">
+            <h6 class="compress icon-android"> Android Apps</h6>
+            <ul>
+              <li><a href="https://geoloqi.com/app-store/geonotes/android">Geonotes</a></li>
+              <li><a href="https://geoloqi.com/app-store/geotracks/android">Geotracks</a></li>
+              <li><a href="https://geoloqi.com/app-store/dinodeals/android">DinoDeals</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="common-footer">
+    <div class="inner">
+      <a href="https://geoloqi.com/" id="logo-footer">Geoloqi</a>
+      <div id="social-links">
+        <a href="https://twitter.com/geoloqi" class="icon-twitter"></a>
+        <a href="https://www.facebook.com/geoloqi" class="icon-facebook"></a>
+        <a href="https://github.com/geoloqi" class="icon-github"></a>
+      </div>
+      <section id="footer-menu">
+        <nav>
+          <ul>
+            <li><a href="https://geoloqi.com/about">About</a></li>
+            <li><a href="https://developers.geoloqi.com">Developers</a></li>
+            <li><a href="https://geoloqi.com/press">Press</a></li>
+            <li><a href="https://developers.geoloqi.com/partners-and-oems">Partners &amp; OEMs</a></li>
+            <li><a href="https://geoloqi.com/faq">FAQ</a></li>
+            <li><a href="https://geoloqi.com/blog">Blog</a></li>
+            <li><a href="https://status.geoloqi.com/">API Status</a></li>
+            <li><a href="https://geoloqi.com/privacy">Privacy</a></li>
+            <li><a href="https://developers.geoloqi.com/contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <small>&copy; Copyright 2012 <a href="https://geoloqi.com">Geoloqi, Inc.</a> and contributors.</small>
+      </section>
+      
+    </div>
+  </div>
+</footer>

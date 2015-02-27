@@ -1,0 +1,7 @@
+https://geoloqi.com/blog http://geoloqi.com/blog/
+https://geoloqi.com/blog/feed http://geoloqi.com/blog/feed/
+https://geoloqi.com/auth/manual/twitter https://geoloqi.com/auth/twitter
+https://geoloqi.com/map https://geoloqi.com/session/new?page=%2Fmap
+https://geoloqi.com/activity https://geoloqi.com/session/new?page=%2Factivity
+https://geoloqi.com/blog/2012/03/data-portaits-powered-by-3-5-years-of-data-and-2-5-million-gps-points/ https://geoloqi.com/blog/2012/03/data-portraits-powered-by-3-5-years-of-data-and-2-5-million-gps-points/
+https://geoloqi.com/layers https://geoloqi.com/session/new?page=%2Flayers
