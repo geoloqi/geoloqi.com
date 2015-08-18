@@ -15,7 +15,7 @@
   <!--
   <link rel="stylesheet" href="http://web-local.geoloqi.com:9393/css/blog.css">
   -->
-  <link rel="stylesheet" href="https://geoloqi.com/css/blog.css">
+  <link rel="stylesheet" href="http://geoloqi.com/css/blog.css">
 
 	<?php wp_enqueue_script( $handle = 'modernizr'); ?>
   <?php wp_enqueue_script( $handle = 'jquery'); ?>

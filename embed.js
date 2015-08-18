@@ -44,11 +44,11 @@
 				if(geoloqiWidgetWidth == false) {
 					geoloqiWidgetWidth = geoloqiMapWidgetWidth;
 				}
-				iframeSrc = elements[i-1].href.replace(/https?:\/\/[a-zA-Z\.]+\/([a-zA-Z0-9_]+\/[a-zA-Z0-9_]+)/, 'https://geoloqi.com/trip/widget/$1');
+				iframeSrc = elements[i-1].href.replace(/https?:\/\/[a-zA-Z\.]+\/([a-zA-Z0-9_]+\/[a-zA-Z0-9_]+)/, 'http://geoloqi.com/trip/widget/$1');
 			} else if(isGeoloqiLayer) {
 				geoloqiWidgetHeight = 24;
 				geoloqiWidgetWidth = 180;
-				iframeSrc = elements[i-1].href.replace(/https?:\/\/[a-zA-Z\.]+\/layer\/(?:info\/)?([a-zA-Z0-9_]+)/, 'https://geoloqi.com/layer/$1/widget');
+				iframeSrc = elements[i-1].href.replace(/https?:\/\/[a-zA-Z\.]+\/layer\/(?:info\/)?([a-zA-Z0-9_]+)/, 'http://geoloqi.com/layer/$1/widget');
 			}
 			if(isGeoloqiMap || isGeoloqiLayer) {
 				elements[i-1].innerHTML = '<iframe frameborder="0" border="0" scrolling="no" width="' + geoloqiWidgetWidth + '" height="' + geoloqiWidgetHeight + '" src="' + iframeSrc + '?' + geoloqiQueryString + '"></iframe>';

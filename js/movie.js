@@ -160,7 +160,7 @@ define([
           var newLine = lg.geometry.insertPoint(0, idx, newPoint);
           lg.setGeometry(newLine);
           idx++;
-          // index numbers lifted from https://geoloqi.com/assets/home_page.269258.js
+          // index numbers lifted from http://geoloqi.com/assets/home_page.269258.js
           switch (idx) {
             case 20:
               m._circles[0].setSymbol(m.highlightSymbol);
